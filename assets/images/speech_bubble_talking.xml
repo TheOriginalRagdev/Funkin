@@ -7,4 +7,4 @@
 	<SubTexture name="Speech Bubble Normal Open0002" x="328" y="431" width="835" height="283" frameX="-374" frameY="-4" frameWidth="1263" frameHeight="330"/>
 	<SubTexture name="Speech Bubble Normal Open0003" x="1173" y="431" width="1263" height="315" frameX="0" frameY="-15" frameWidth="1263" frameHeight="330"/>
 	<SubTexture name="Speech Bubble Normal Open0004" x="1173" y="431" width="1263" height="315" frameX="0" frameY="-15" frameWidth="1263" frameHeight="330"/>
-	<SubTexture>
+	</TextureAtlas>
