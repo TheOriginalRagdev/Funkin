@@ -495,6 +495,46 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+							
+			case 'maro':
+				tex = FlxAtlasFrames.fromSparrow('assets/images/Mao_FNF_assetss.png', 'assets/images/Maro_FNF_assetss.xml');
+				frames = tex;
+				animation.addByPrefix('idle', "maro Idle Dance", 24);
+				animation.addByPrefix('singUP', 'maro Up note0', 24, false);
+				animation.addByPrefix('singDOWN', 'maro Down Note0', 24, false);
+				if (isPlayer)
+				{
+					animation.addByPrefix('singLEFT', 'maro NOTE LEFT0', 24, false);
+					animation.addByPrefix('singRIGHT', 'maro Note Right0', 24, false);
+					animation.addByPrefix('singRIGHTmiss', 'maro Note Right Miss', 24, false);
+					animation.addByPrefix('singLEFTmiss', 'maro NOTE LEFT miss', 24, false);
+				}
+				else
+				{
+					// Need to be flipped! REDO THIS LATER!
+					animation.addByPrefix('singLEFT', 'maro Note Right0', 24, false);
+					animation.addByPrefix('singRIGHT', 'maro NOTE LEFT0', 24, false);
+					animation.addByPrefix('singRIGHTmiss', 'maro NOTE LEFT miss', 24, false);
+					animation.addByPrefix('singLEFTmiss', 'maro Note Right Miss', 24, false);
+				}
+
+				animation.addByPrefix('singUPmiss', 'maro Up note miss', 24);
+				animation.addByPrefix('singDOWNmiss', 'Maro Down Note MISS', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -68, -7);
+				addOffset("singLEFT", 65, 9);
+				addOffset("singDOWN", 200, -70);
+				addOffset("singUPmiss", -19, 67);
+				addOffset("singRIGHTmiss", -60, 41);
+				addOffset("singLEFTmiss", 62, 64);
+				addOffset("singDOWNmiss", 210, -28);
+
+				playAnim('idle');
+
+				flipX = true;
+
 		}
 
 		dance();
